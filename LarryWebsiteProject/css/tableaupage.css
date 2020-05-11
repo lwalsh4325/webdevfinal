@@ -1,0 +1,184 @@
+body{
+    background-color:#61B329;
+    font-size: 18px;
+}
+
+h1{
+    font-size: 40px;
+    
+}
+
+.title{
+    position: relative;
+    margin-top: 150px;
+}
+
+
+
+
+.header{
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    height: 100px;
+    z-index: 2;
+    border-bottom: solid 1px #555555;
+}
+
+div .container{
+    position: fixed;
+    padding: 20px;
+    margin-top: 10px;
+}
+div .container2{
+    position: relative;
+    margin-top: 100px;
+}
+img{
+    height: 400px;
+    width: 400px;
+    padding: 10px;  
+}
+
+img .box2{
+    height: 100%;
+    width:100%;
+}
+/*
+img .box2{
+    float: left;
+}
+
+img .box3{
+    float: right;
+}
+
+img .box4{
+    float: left;
+}
+*/
+div .box1{
+    float: left;
+    text-align:center;
+    border-color:  rgb(156, 13, 13); border-style: solid;
+    width: 50%;
+    height: 25%;
+}
+
+div .box2{
+    
+    float: right;
+    
+    text-align:center;
+    width: 50%;
+    border-color:  rgb(156, 13, 13); border-style: solid;
+    height: 25%;
+    
+    
+}
+
+div .box3{
+    
+    float: left;
+    padding:20px;
+    text-align:center;
+    width: 50%;
+    border-color:  rgb(156, 13, 13); border-style: solid;
+    height: 25%;
+    
+}
+
+div .box4{
+   
+    float: right;
+    padding:20px;
+    text-align:center;
+    border-color:  rgb(156, 13, 13); border-style: solid;
+    height: 25%;
+    width: 50%;
+}
+
+figcaption{
+    font-size: 12px;
+}
+
+#mainNav {
+    position: absolute;
+    border-bottom: 1px solid #e9ecef;
+    background-color: white;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  #mainNav .navbar-brand {
+    font-weight: 800;
+    color: #343a40;
+  }
+  
+  #mainNav .navbar-toggler {
+    font-size: 12px;
+    font-weight: 800;
+    padding: 13px;
+    text-transform: uppercase;
+    color: #343a40;
+  }
+  
+  #mainNav .navbar-nav > li.nav-item > a {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  @media only screen and (min-width: 992px) {
+    #mainNav {
+      border-bottom: 1px solid transparent;
+      background: transparent;
+    }
+    #mainNav .navbar-brand {
+      padding: 10px 20px;
+      color: #fff;
+    }
+    #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+      color: rgba(255, 255, 255, 0.8);
+    }
+    #mainNav .navbar-nav > li.nav-item > a {
+      padding: 10px 20px;
+      color: #fff;
+    }
+    #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    #mainNav {
+      transition: background-color 0.2s;
+      /* Force Hardware Acceleration in WebKit */
+      transform: translate3d(0, 0, 0);
+      -webkit-backface-visibility: hidden;
+    }
+    #mainNav.is-fixed {
+      /* when the user scrolls down, we hide the header right above the viewport */
+      position: fixed;
+      top: -67px;
+      transition: transform 0.2s;
+      border-bottom: 1px solid white;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+    #mainNav.is-fixed .navbar-brand {
+      color: #212529;
+    }
+    #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
+      color: #0085A1;
+    }
+    #mainNav.is-fixed .navbar-nav > li.nav-item > a {
+      color: #212529;
+    }
+    #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
+      color: #0085A1;
+    }
+    #mainNav.is-visible {
+      /* if the user changes the scrolling direction, we show the header */
+      transform: translate3d(0, 100%, 0);
+    }
+  }

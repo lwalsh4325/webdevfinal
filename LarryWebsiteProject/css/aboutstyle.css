@@ -1,0 +1,28 @@
+ul{
+    text-align: center;
+    list-style: inside;
+    font-size: 32px;
+
+}
+
+ol li{
+    font-size: 16px;
+    
+}
+
+div .lists ul ol li{
+    text-align: center;
+}
+
+div .lists{
+    margin-left:250px;
+}
+
+.contact li{
+    list-style: none;
+    text-align: center;
+}
+span .subheader{
+    float: right;
+    border: solid 2px lime;
+}

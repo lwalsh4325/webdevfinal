@@ -1,0 +1,13 @@
+
+h3, h2{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.site-heading h1 {
+    font-family: cursive;
+}
+
+img{
+    height: 450px;
+    width: 100%;
+}
